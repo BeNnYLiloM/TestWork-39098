@@ -1,0 +1,19 @@
+.navbar {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
+  font-weight: 500;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    text-decoration: none;
+    margin: 0 16px;
+  }
+
+  .logo {
+    max-width: 100px;
+  }
+}
