@@ -59,10 +59,6 @@ export default {
       }
     },
     deleteProduct() {
-      // this.$emit('sumBlock', {
-      //   type: 'decrement',
-      //   price: this.product.price * this.product.counter
-      // })
       this.$store.dispatch(actionTypes.removeFromCart, this.product)
     }
   }
