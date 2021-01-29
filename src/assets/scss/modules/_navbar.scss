@@ -1,6 +1,17 @@
 .navbar {
   box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
   font-weight: 500;
+  background: $cDefaultBg;
+  padding-top: 8px;
+  padding-bottom: 4px;
+  margin-bottom: 40px;
+
+  @media (max-width: 992px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
 
   &__wrap {
     display: flex;
@@ -10,10 +21,22 @@
 
   &__link {
     text-decoration: none;
-    margin: 0 16px;
+    position: relative;
   }
 
   .logo {
-    max-width: 100px;
+    width: 50px;
+  }
+
+  .count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4px;
+    color: $cGray;
+
+    &._active {
+      color: $cRed;
+    }
   }
 }

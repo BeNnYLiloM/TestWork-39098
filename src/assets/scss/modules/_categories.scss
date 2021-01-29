@@ -1,0 +1,44 @@
+.categories {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+
+  @media (max-width: 992px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: -10px;
+  }
+
+  &__item {
+    text-decoration: none;
+    color: $cGray;
+    opacity: 0.6;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+
+    @media (max-width: 992px) {
+      margin: 0 10px;
+    }
+
+    @media (max-width: 570px) {
+      &:last-child {
+        margin-bottom: 10px;
+      }
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    &._active {
+      font-weight: 500;
+      opacity: 1;
+      cursor: default;
+    }
+  }
+}

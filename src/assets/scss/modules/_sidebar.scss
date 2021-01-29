@@ -1,0 +1,27 @@
+.sidebar {
+  width: 220px;
+  margin-right: 20px;
+
+  @media (max-width: 992px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    background: $cDefaultBg;
+    border-radius: 6px;
+    padding-bottom: 10px;
+
+    &-title {
+      font-size: 18px;
+      font-weight: 500;
+      border-bottom: 1px solid $cGray;
+      padding: 6px 10px;
+      margin-bottom: 10px;
+
+      @media (max-width: 992px) {
+        text-align: center;
+      }
+    }
+  }
+}
